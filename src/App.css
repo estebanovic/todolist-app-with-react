@@ -13,7 +13,6 @@ body{
 }
 
 .container{
-  min-height: 150px;
   width: 600px;
   margin: auto;
   margin-top: 50px;
