@@ -28,7 +28,7 @@ function App() {
         </form>
         { todoList !== null && todoList.length > 0? 
         todoList.map((todo, i) => <div className="todo" key={i}> {todo} <i onClick={() => deleteTodoValue(i)} class="fas fa-times delete"></i></div> ) : ""}
-        <div className="items">{todoList.length +" items left"}</div>
+        <div className="items">{todoList.length <= 1 ? todoList.length +" item left" : todoList.length +" items left"}</div>
       </div>
     </div>
   );
